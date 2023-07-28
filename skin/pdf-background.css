@@ -3,6 +3,7 @@ body.daytime #viewer.pdfViewer > .page > .textLayer{display:block;background-col
 body.nighttime #viewer.pdfViewer > .page > .textLayer{display:block;background-color:rgba(147,147,147,0.5);}
 body.careeye #viewer.pdfViewer > .page > .textLayer{display:block;background-color:rgba(155,189,133,0.5);}
 body.parchment #viewer.pdfViewer > .page > .textLayer{display:block;background-color:rgba(191,177,125,0.5);}
+body.sam #viewer.pdfViewer > .page > .textLayer{display:block;background-color:rgba(30, 195, 234, 0.5);}
 
 .toolbar .toolbarButton.background-color::before {
     content: "👁";
