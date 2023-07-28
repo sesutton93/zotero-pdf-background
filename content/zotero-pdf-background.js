@@ -22,7 +22,7 @@
 
   var pdf_background = class {
     constructor() {
-      this.background_list=["default","daytime","nighttime","careeye","parchment"];//背景颜色列表
+      this.background_list=["default","daytime","nighttime","careeye","parchment","sam"];//背景颜色列表
       this.setPref("defaultBackground",this.background_list[3]);//预先写入配置
     }
     getPref(pref) {
@@ -60,11 +60,12 @@
       selector.setAttribute("id", "background-selector");
       selector.setAttribute("class", "hidden");
       selector.innerHTML=`
-        <li value="default">默认</li>
-        <li value="daytime">日间</li>
-        <li value="nighttime">夜间</li>
-        <li value="careeye">护眼</li>
-        <li value="parchment">羊皮纸</li>
+        <li value="default">default</li>
+        <li value="daytime">daytime</li>
+        <li value="nighttime">nighttime</li>
+        <li value="careeye">careeye</li>
+        <li value="parchment">parchment</li>
+        <li value="sam">sam</li>
       `;
       selector.onclick = (e) => {
         this.backgroundSelectorOnClick(e,readerWindow);
