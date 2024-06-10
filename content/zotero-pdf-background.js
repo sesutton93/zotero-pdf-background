@@ -97,7 +97,7 @@
       const header = readerWindow.document.querySelector("head");
       header.appendChild(style);
       var defaultBackground = this.getPref("defaultBackground");//获得设置中背景颜色
-      if(defaultBackground==undefined)defaultBackground="careeye";
+      if(defaultBackground==undefined)defaultBackground="sam";
       readerWindow.document.querySelector("body").setAttribute("class",defaultBackground);
       //设置按钮
       var ele;
